@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46CF5AEB045C4312419DC508 /* Pods_imgur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FEA0E522A2C39858C6D5BB /* Pods_imgur.framework */; };
+		9805104021709F4F0042F0CC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805103F21709F4F0042F0CC /* DetailViewController.swift */; };
+		9840C6742173C225001BAD75 /* ImageJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9840C6732173C225001BAD75 /* ImageJSON.swift */; };
+		9863AACE21752A4E00ECD3B0 /* ImageLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863AACD21752A4E00ECD3B0 /* ImageLoad.swift */; };
 		9867B5D7216FCE8D00D17C96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9867B5D6216FCE8D00D17C96 /* AppDelegate.swift */; };
 		9867B5D9216FCE8D00D17C96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9867B5D8216FCE8D00D17C96 /* ViewController.swift */; };
 		9867B5DC216FCE8D00D17C96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9867B5DA216FCE8D00D17C96 /* Main.storyboard */; };
 		9867B5DE216FCE8F00D17C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9867B5DD216FCE8F00D17C96 /* Assets.xcassets */; };
 		9867B5E1216FCE8F00D17C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9867B5DF216FCE8F00D17C96 /* LaunchScreen.storyboard */; };
+		9867B5E9216FCFC400D17C96 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9867B5E8216FCFC400D17C96 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BC73052F1EB971CEB6525CE /* Pods-imgur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgur/Pods-imgur.debug.xcconfig"; sourceTree = "<group>"; };
+		9805103F21709F4F0042F0CC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9840C6732173C225001BAD75 /* ImageJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageJSON.swift; sourceTree = "<group>"; };
+		9863AACD21752A4E00ECD3B0 /* ImageLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoad.swift; sourceTree = "<group>"; };
 		9867B5D3216FCE8D00D17C96 /* imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9867B5D6216FCE8D00D17C96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9867B5D8216FCE8D00D17C96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		9867B5DD216FCE8F00D17C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9867B5E0216FCE8F00D17C96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9867B5E2216FCE8F00D17C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9867B5E8216FCFC400D17C96 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7FEA0E522A2C39858C6D5BB /* Pods_imgur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7DF657396DE88B0C0DBDDE /* Pods-imgur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgur/Pods-imgur.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CF5AEB045C4312419DC508 /* Pods_imgur.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		115F6ECD4879654556859AB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BC73052F1EB971CEB6525CE /* Pods-imgur.debug.xcconfig */,
+				DF7DF657396DE88B0C0DBDDE /* Pods-imgur.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		978A27501BD25A273E2E0A72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7FEA0E522A2C39858C6D5BB /* Pods_imgur.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9867B5CA216FCE8D00D17C96 = {
 			isa = PBXGroup;
 			children = (
 				9867B5D5216FCE8D00D17C96 /* imgur */,
 				9867B5D4216FCE8D00D17C96 /* Products */,
+				115F6ECD4879654556859AB0 /* Pods */,
+				978A27501BD25A273E2E0A72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,10 @@
 			children = (
 				9867B5D6216FCE8D00D17C96 /* AppDelegate.swift */,
 				9867B5D8216FCE8D00D17C96 /* ViewController.swift */,
+				9805103F21709F4F0042F0CC /* DetailViewController.swift */,
+				9863AACD21752A4E00ECD3B0 /* ImageLoad.swift */,
+				9840C6732173C225001BAD75 /* ImageJSON.swift */,
+				9867B5E8216FCFC400D17C96 /* ImageCollectionViewCell.swift */,
 				9867B5DA216FCE8D00D17C96 /* Main.storyboard */,
 				9867B5DD216FCE8F00D17C96 /* Assets.xcassets */,
 				9867B5DF216FCE8F00D17C96 /* LaunchScreen.storyboard */,
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9867B5E5216FCE8F00D17C96 /* Build configuration list for PBXNativeTarget "imgur" */;
 			buildPhases = (
+				6C4F702165835B0E6EC437EE /* [CP] Check Pods Manifest.lock */,
 				9867B5CF216FCE8D00D17C96 /* Sources */,
 				9867B5D0216FCE8D00D17C96 /* Frameworks */,
 				9867B5D1216FCE8D00D17C96 /* Resources */,
+				F9A12420FF9834E8D78C33A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +168,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C4F702165835B0E6EC437EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-imgur-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A12420FF9834E8D78C33A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-imgur/Pods-imgur-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imgur/Pods-imgur-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9867B5CF216FCE8D00D17C96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9840C6742173C225001BAD75 /* ImageJSON.swift in Sources */,
+				9867B5E9216FCFC400D17C96 /* ImageCollectionViewCell.swift in Sources */,
 				9867B5D9216FCE8D00D17C96 /* ViewController.swift in Sources */,
 				9867B5D7216FCE8D00D17C96 /* AppDelegate.swift in Sources */,
+				9805104021709F4F0042F0CC /* DetailViewController.swift in Sources */,
+				9863AACE21752A4E00ECD3B0 /* ImageLoad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +371,7 @@
 		};
 		9867B5E6216FCE8F00D17C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC73052F1EB971CEB6525CE /* Pods-imgur.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +390,7 @@
 		};
 		9867B5E7216FCE8F00D17C96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7DF657396DE88B0C0DBDDE /* Pods-imgur.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
